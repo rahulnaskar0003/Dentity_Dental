@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="py-16 px-4 bg-cyan-950 text-white text-center">
+    <h1 class="text-4xl font-extrabold mb-4">Our Specialized Dental Services</h1>
+    <p class="text-cyan-200 max-w-xl mx-auto">Discover comprehensive dental treatments tailored with precision and advanced care at Dentity Dental.</p>
+</section>
+
+<section class="py-20 px-4 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Root Canal" class="h-48 w-full object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Painless Root Canal</h3>
+                <p class="text-slate-600 text-sm mb-4">Save your natural teeth with single-sitting painless root canal treatment using Rotary Endodontics.</p>
+                <a href="{{ url_for('contact') }}" class="text-cyan-600 font-semibold text-sm hover:underline">Book Consultation &rarr;</a>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d" alt="Dental Implants" class="h-48 w-full object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Dental Implants</h3>
+                <p class="text-slate-600 text-sm mb-4">Permanent replacement for missing teeth with world-class titanium implants that look and feel natural.</p>
+                <a href="{{ url_for('contact') }}" class="text-cyan-600 font-semibold text-sm hover:underline">Book Consultation &rarr;</a>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce6395" alt="Teeth Whitening" class="h-48 w-full object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Laser Teeth Whitening</h3>
+                <p class="text-slate-600 text-sm mb-4">Get up to 4 shades brighter teeth in just 45 minutes with advanced cool-laser whitening technology.</p>
+                <a href="{{ url_for('contact') }}" class="text-cyan-600 font-semibold text-sm hover:underline">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,846 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Hero Section with All 6 Characters Fully Visible -->
+<section class="relative bg-cyan-950 text-white py-20 lg:py-28 px-4 overflow-hidden">
+    <!-- Ambient Glow for Natural Depth -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-cyan-600/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-10 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+        
+        <!-- Left Column: Text & Action Buttons -->
+        <div class="lg:col-span-6 space-y-6">
+            <!-- Trust Badge Pill -->
+            <div class="inline-flex items-center gap-2 bg-cyan-900/90 border border-cyan-700/60 backdrop-blur-md px-4 py-2 rounded-full text-cyan-300 text-xs font-semibold uppercase tracking-wider shadow-lg">
+                <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span>Multi-Specialty Dental Clinic | 9 Clinics Across Kolkata & West Bengal</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight uppercase">
+                Dentity <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">Dental</span>
+            </h1>
+
+            <p class="text-slate-100 text-base sm:text-lg leading-relaxed font-normal">
+                Kolkata’s most trusted best dental clinic chain with best dentists in Kolkata for a healthy and beautiful smile.
+            </p>
+
+            <!-- 3 Action Buttons -->
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="tel:9051553253" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg shadow-cyan-600/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2.5 text-sm sm:text-base">
+                    <i class="fa-solid fa-phone text-cyan-200"></i>
+                    <span>Call Now</span>
+                </a>
+                
+                <a href="https://wa.me/919051553253?text=Hello%20Dentity%20Dental,%20I%20want%20to%20book%20an%20appointment." target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg shadow-green-600/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2.5 text-sm sm:text-base">
+                    <i class="fa-brands fa-whatsapp text-green-200"></i>
+                    <span>WhatsApp Now</span>
+                </a>
+
+                <a href="{{ url_for('contact') }}" class="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg shadow-teal-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2.5 text-sm sm:text-base">
+                    <i class="fa-regular fa-calendar-check text-teal-100"></i>
+                    <span>Book an Appointment</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column: All 6 Characters Clearly Visible -->
+        <div class="lg:col-span-6 flex justify-center items-center relative">
+            <div class="absolute inset-0 bg-gradient-to-tr from-cyan-600/20 to-teal-500/20 rounded-3xl blur-2xl pointer-events-none"></div>
+            <div class="relative w-full overflow-hidden flex justify-center p-2">
+                <img src="/static/all.jpeg" alt="Dentity Dental Family and Patients" class="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Ultra-Professional High-End About Us Section -->
+<section class="py-28 px-4 bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-800 relative overflow-hidden">
+    <div class="absolute -right-20 top-20 w-80 h-80 bg-cyan-100/50 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-20 bottom-10 w-80 h-80 bg-teal-100/50 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+        
+        <!-- Left Column: Elite Visual Presentation -->
+        <div class="lg:col-span-6 space-y-4">
+            <div class="bg-white p-4 rounded-3xl shadow-2xl border-2 border-slate-200/90 relative group">
+                <img src="/static/about.jpeg" alt="Best Dentist in Kolkata - Dentity Dental" class="w-full h-[400px] object-cover rounded-2xl group-hover:scale-[1.01] transition-transform duration-500">
+            </div>
+            
+            <div class="bg-slate-900 text-white p-4 rounded-2xl shadow-xl border border-cyan-500/30 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl font-bold shrink-0">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-cyan-300 font-semibold uppercase tracking-wider">Excellence Awarded</p>
+                    <p class="text-sm font-bold text-white">25+ Years of Clinical Mastery & Leadership</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Complete Text -->
+        <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-cyan-50 text-cyan-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-cyan-100 shadow-sm">
+                <i class="fa-solid fa-circle-chevron-right text-cyan-500"></i> About Our Practice
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-[1.2] tracking-tight">
+                Best Dentist in Kolkata | Best Dental Clinic in Kolkata | <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Dentity Dental</span>
+            </h2>
+
+            <div class="text-slate-600 text-base leading-relaxed space-y-4 font-normal">
+                <p>
+                    <strong>Dentity Dental</strong> is one of the most trusted and multiple award winning, rapidly growing, affordable, sterilized multi speciality dental clinic chains equipped with modern instruments in <strong>Kolkata and West Bengal</strong>, founded and led by <strong>Dr. Saikat Paul</strong>, an experienced <strong>Prosthodontist, Implantologist</strong>, and <strong>Oral & Dental Surgeon</strong> with more than 25 years of clinical and academic experience and excellence.
+                </p>
+                <p>
+                    We have 8 advanced dental clinic branches which are strategically located across Kolkata including <strong>Gariahat, Netajinagar (Tollygunge), SuryaNagar (Tollygunge), Sonarpur, DumDum Cantonment, Teghoria, Rajarhat, and Beleghata</strong>. We also have a clinic in Midnapore Town with excellent facilities named <strong>Dr. Saikat Paul and Team (Dental Mid World)</strong>.
+                </p>
+                <p>
+                    We are committed to providing world class dental care and treatment by multiple specialist best dentists and dental surgeons maintaining accuracy, proper hygiene, and comfort at a reasonable price.
+                </p>
+                <p>
+                    The clinics of Dentity Dental are ISO certified and have been repeatedly recognized as top ranking dental clinics in the Times of India Health Survey, along with an award from the Governor of West Bengal and multiple other certifications.
+                </p>
+            </div>
+
+            <!-- Quick Highlight Pills -->
+            <div class="grid grid-cols-2 gap-4 pt-2">
+                <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center font-bold text-sm">✓</div>
+                    <span class="text-xs font-bold text-slate-800">ISO Certified & Sterilized</span>
+                </div>
+                <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center font-bold text-sm">✓</div>
+                    <span class="text-xs font-bold text-slate-800">Times of India Top Ranked</span>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <a href="{{ url_for('about') }}" class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-cyan-600/25 transition-all transform hover:-translate-y-0.5 text-sm tracking-wide">
+                    <span>Discover More About Us</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Our Services Section (All Your Dental Needs at One Place) -->
+<section class="py-24 px-4 bg-sky-50 text-slate-800">
+    <div class="max-w-7xl mx-auto space-y-16">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+            <span class="text-cyan-600 font-bold text-sm uppercase tracking-wider">Our Services</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+                All Your Dental Needs at One Place
+            </h2>
+        </div>
+
+        <!-- 6 Service Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden bg-slate-100 h-52">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67" alt="Root Canal Treatment" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <h3 class="text-xl font-bold text-slate-900">Root Canal, Tooth Filling and Emergency Dental Treatment</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            Laser RCT, Painless Root Canal Treatment, Re-RCT, Microscopic RCT, Rotary Endodontics and Single Sitting RCT always helps to save infected teeth. The Tooth-Coloured Fillings treat cavities, while Emergency Dental Treatment provides immediate care for severe tooth pain(If Pulpally involved by Emergency Pulpectomy) Immediate care of dental infection, swelling, broken teeth and dental trauma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden bg-slate-100 h-52">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Dental Implants" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <h3 class="text-xl font-bold text-slate-900">Dental Implants, Crowns, Bridges and Dentures</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            Dental Implants, including Single, Multiple, All-on-4, All-on-6, Immediate and Basal Implants, replace missing teeth. Bone grafting and Sinus Lift procedures are performed when required. Zirconia Crowns, Ceramic Crowns, Dental Bridges, including Complete, Partial, Flexible and Implant Supported Dentures help to restore beautiful smiles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden bg-slate-100 h-52">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95" alt="Dental Braces" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <h3 class="text-xl font-bold text-slate-900">Dental Braces, Clear Aligners and Smile Makeup Treatment</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            Orthodontic Treatment with Metallic, Ceramic and Self-Ligating Dental Braces helps to correct zigzag teeth, including crowding, spacing and bite problems. Clear Aligners, 3D Oral Scanning, Invisible Braces, Digital Smile Designing and Porcelain Veneers help to improve teeth alignment, shape and provides beautiful, natural smile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden bg-slate-100 h-52">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="Teeth Cleaning" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <h3 class="text-xl font-bold text-slate-900">Teeth Cleaning, Gum Treatment and Teeth Whitening</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            Ultrasonic Scaling, Teeth Cleaning, deep Gum Cleaning, and Polishing remove hard plaque, tartar and stains. The Gum Disease Treatment, Electrosurgery, Laser Gum therapy, Crown Lengthening and Gum Grafting helps to improve periodontal health and condition. The Teeth Whitening and Laser Teeth Bleaching brighten the hard stained teeth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden bg-slate-100 h-52">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514" alt="Tooth Extraction" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <h3 class="text-xl font-bold text-slate-900">Tooth Extraction, Wisdom Tooth Removal and Oral Surgery</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            Painless Tooth Extraction and Impacted Wisdom Tooth Removal Surgery can be done using minimally invasive and Piezo Surgical Techniques for speedy recovery. The Oral and Maxillofacial Surgery includes Oral Biopsy, Cyst Removal Treatment, Jaw Surgery, Fracture Management, TMJ Treatment and Oral Lesion Treatment is required for complex conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden bg-slate-100 h-52">
+                        <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982" alt="Children's Dental Care" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <h3 class="text-xl font-bold text-slate-900">Children's, Preventive and Advanced Dental Care</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            Children's Dental Treatment includes Cavity Treatment, Fluoride Therapy, Space Maintainers, and Dental Sealants are used to protect growing teeth. The Preventive Dentistry helps to improve long term oral health. Advanced technologies including RVG, Apex Locator, Dental Loupes, 3D Oral Scanners, Needless Injection and Conscious Sedation are necessary to enhance dental care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- See More Button -->
+        <div class="text-center pt-6">
+            <a href="{{ url_for('services') }}" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-10 py-4 rounded-xl shadow-lg shadow-cyan-600/25 transition-all transform hover:-translate-y-0.5 text-base tracking-wide">
+                See More
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ULTRA-PREMIUM SECTION 1: Exact Height Matching with Complete Text (No Scroll, Fully Visible) -->
+<section class="py-28 px-4 bg-white text-slate-900 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <!-- Left: Elite Patient Card with Frame & Glow (Height: 450px) -->
+        <div class="lg:col-span-6 relative flex items-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-3xl blur-2xl"></div>
+            <div class="relative w-full bg-white p-5 rounded-3xl shadow-2xl border-2 border-slate-200/90 group">
+                <img src="/static/patient1.jpeg" alt="Dentity Dental Clinic in Kolkata" class="w-full h-[450px] object-cover rounded-2xl group-hover:scale-[1.01] transition-transform duration-500">
+                <div class="absolute -bottom-4 right-8 bg-cyan-900 text-white px-6 py-3 rounded-2xl shadow-xl border border-cyan-500/40 text-xs font-bold tracking-widest uppercase">
+                    ⭐ 4.9/5 Rated Dental Chain
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right: Perfectly Matched Height Box with Complete Text & Optimized Typography (Zero Scrolling) -->
+        <div class="lg:col-span-6 flex flex-col justify-between h-[480px] bg-slate-50/80 p-6 rounded-3xl border border-slate-200/90 shadow-lg relative">
+            
+            <!-- Top Badge & Heading with Optimized Size -->
+            <div class="space-y-1.5 shrink-0">
+                <div class="inline-flex items-center gap-1.5 bg-cyan-50 text-cyan-700 px-3 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider border border-cyan-100 shadow-sm w-fit">
+                    <i class="fa-solid fa-star text-cyan-500"></i> Kolkata's #1 Choice
+                </div>
+
+                <h2 class="text-lg sm:text-xl lg:text-[21px] font-extrabold text-slate-900 leading-[1.15] tracking-tight uppercase">
+                    FIND <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">"THE BEST DENTAL CLINIC WITH THE BEST DENTISTS NEAR ME"</span> AT DENTITY DENTAL IN KOLKATA
+                </h2>
+            </div>
+
+            <!-- Fully visible content area containing 100% of the exact text (No scroll needed) -->
+            <div class="space-y-1.5 text-slate-600 text-[11.5px] sm:text-[12.5px] leading-[1.35] text-justify font-normal my-1">
+                <p>
+                    If you want to find the <span class="font-semibold text-slate-800">"best affordable dental clinic with the best dentists near me"</span>, the first choice is Dentity Dental. Our strategically located dental clinics are at Sonarpur, Gariahat, Netaji Nagar, Suryanagar, Beleghata, Rajarhat Teghoria NewTown, Teghoria, Dum Dum Cantonment in Kolkata.
+                </p>
+                <p>
+                    Dentity Dental always brings professional and patient centric dental care at affordable price to your neighbourhood. Our easily accessible clinics make easier to get preventive, cosmetic and advanced dental treatments without travelling too far. If you need a routine dental check up, teeth cleaning, tooth coloured fillings, RCT, dental implants, braces and digital smile designing treatment at extremely low cost, our specialist dentists will always help you choose the proper treatment without any delay. <strong class="text-slate-800">Visit the Dentity Dental clinic nearest to your home, or workplace including the local area, and check the available dental treatments here without any hesitation to get the best dental treatment at an affordable price.</strong>
+                </p>
+            </div>
+
+            <!-- Bottom Note / Action hint -->
+            <div class="pt-2 border-t border-slate-200 text-xs text-slate-500 font-semibold shrink-0 flex items-center justify-between">
+                <span>📍 9 Branches Across Kolkata & West Bengal</span>
+                <span class="text-cyan-600 font-bold uppercase tracking-wider text-[11px]">Verified & Trusted Chain</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ULTRA-PREMIUM HARMONIZED BLENDED SHOWCASE (Seamless Color Flow & Unified Aesthetic) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 shadow-2xl overflow-hidden">
+    
+    <!-- Left Column: Harmonized Rich Teal-Cyan Gradient -->
+    <div class="bg-gradient-to-br from-cyan-950 via-teal-900 to-cyan-900 text-white p-12 lg:p-20 flex flex-col justify-center space-y-8 relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="space-y-3 relative z-10">
+            <span class="text-cyan-300 font-bold text-xs uppercase tracking-widest bg-cyan-900/60 px-3.5 py-1 rounded-full border border-cyan-700/50">Accreditations & Honors</span>
+            <p class="text-cyan-50 text-base lg:text-lg leading-relaxed font-normal">
+                <strong class="text-white font-bold">Dentity Dental</strong> – a rapidly growing, affordable, multi-speciality dental clinic chain at various locations near you in Kolkata is awarded and certified by multiple prestigious aspects.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-10">
+            <!-- Card 1 -->
+            <div class="bg-cyan-900/40 backdrop-blur-md p-4 rounded-2xl border border-cyan-700/40 shadow-xl hover:border-cyan-400 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-cyan-400/20 text-cyan-300 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h4 class="text-sm font-bold text-white mb-1">ISO 9001: 2015</h4>
+                <p class="text-cyan-200 text-xs">Certified Quality Standards</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-cyan-900/40 backdrop-blur-md p-4 rounded-2xl border border-cyan-700/40 shadow-xl hover:border-cyan-400 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-cyan-400/20 text-cyan-300 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+                <h4 class="text-sm font-bold text-white mb-1">Governor Award</h4>
+                <p class="text-cyan-200 text-xs">For Clinical Excellence in WB</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-cyan-900/40 backdrop-blur-md p-4 rounded-2xl border border-cyan-700/40 shadow-xl hover:border-cyan-400 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-cyan-400/20 text-cyan-300 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <h4 class="text-sm font-bold text-white mb-1">Times of India</h4>
+                <p class="text-cyan-200 text-xs">Multiple Times Top Rank Holder</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-cyan-900/40 backdrop-blur-md p-4 rounded-2xl border border-cyan-700/40 shadow-xl hover:border-cyan-400 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-cyan-400/20 text-cyan-300 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <h4 class="text-sm font-bold text-white mb-1">Magic Book of Record</h4>
+                <p class="text-cyan-200 text-xs">Official Recognition & Honors</p>
+            </div>
+        </div>
+
+        <div class="pt-2 relative z-10">
+            <a href="tel:9051553253" class="inline-flex items-center gap-3 bg-white hover:bg-cyan-50 text-cyan-950 font-extrabold px-8 py-3.5 rounded-xl shadow-2xl transition-all transform hover:-translate-y-0.5 text-sm tracking-wide">
+                <i class="fa-solid fa-phone text-cyan-600"></i>
+                <span>Call Now for Appointment</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Column: Harmonized Warm Amber-Teal Gradient Flow -->
+    <div class="bg-gradient-to-bl from-amber-500 via-yellow-500 to-teal-900 relative overflow-hidden flex flex-col justify-center items-center p-8 lg:p-14 text-center">
+        <div class="absolute inset-0 bg-cyan-950/15 pointer-events-none"></div>
+
+        <div class="relative z-10 my-4 flex justify-center items-center">
+            <div class="bg-white/90 p-3.5 rounded-3xl shadow-2xl border border-white/50 backdrop-blur-md">
+                <img src="/static/patient2.jpeg" alt="Dentity Dental Patient with Eiffel Tower Model" class="max-h-[420px] w-auto object-contain rounded-2xl drop-shadow-2xl">
+            </div>
+        </div>
+
+        <div class="relative z-10 text-slate-900 font-bold text-xs tracking-widest uppercase pt-4 bg-white/40 px-6 py-2 rounded-full backdrop-blur-sm border border-white/30 shadow-sm">
+            ✨ Your Smile, Our Greatest Achievement ✨
+        </div>
+    </div>
+
+</section>
+
+<!-- ULTRA-PREMIUM WORLD-CLASS "WE MAKE DENTAL TREATMENTS FUN!" SECTION -->
+<section class="py-28 px-4 bg-gradient-to-b from-slate-50 via-white to-cyan-50/40 text-slate-900 relative overflow-hidden">
+    <div class="absolute top-10 right-10 w-80 h-80 bg-teal-200/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-cyan-200/30 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-20 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <div class="inline-flex items-center gap-2 bg-cyan-100/80 text-cyan-800 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-cyan-200 shadow-sm">
+                <i class="fa-regular fa-smile text-cyan-600"></i> Why Choose Us
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+                We Make Dental Treatments <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Fun!</span>
+            </h2>
+            <p class="text-slate-600 text-base sm:text-lg">Experience absolute comfort and joyful patient care at Kolkata's leading dental network.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center bg-white/90 backdrop-blur-xl p-8 lg:p-12 rounded-3xl shadow-2xl border border-slate-200/80">
+            
+            <div class="lg:col-span-6 relative group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-600/20 to-teal-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
+                <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-slate-200">
+                    <img src="/static/fun.jpeg" alt="We Make Dental Treatments Fun - Dentity Dental" class="w-full h-[420px] object-cover rounded-xl group-hover:scale-[1.01] transition-transform duration-500">
+                    <div class="absolute bottom-6 left-6 bg-slate-900/90 backdrop-blur-md text-white px-5 py-2.5 rounded-xl shadow-lg border border-cyan-500/40 text-xs font-bold tracking-wider uppercase">
+                        🌟 Happy Patients Family
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 space-y-8">
+                <div class="space-y-3">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-[1.2]">
+                        Dentity Dental, the best Affordable and Trusted Dental Clinic Chain Near You
+                    </h3>
+                    <p class="text-slate-600 text-base leading-relaxed text-justify">
+                        Dentity Dental provides the best affordable treatment to patients across Kolkata by the best dentists with absolute clinical precision.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:border-cyan-500 transition-colors group">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition-colors font-bold">
+                            😊
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">25+ Years of Excellence</h4>
+                            <p class="text-slate-600 text-xs">Dentity Dental serves patients for over two decades with utmost trust.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:border-cyan-500 transition-colors group">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition-colors font-bold">
+                            🔬
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Modern US-FDA Instruments</h4>
+                            <p class="text-slate-600 text-xs">Equipped with advanced technology for painless and accurate procedures.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:border-cyan-500 transition-colors group">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-600 flex items-center justify-center text-xl shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition-colors font-bold">
+                            ⭐
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">World-Class Patient Care</h4>
+                            <p class="text-slate-600 text-xs">Excellent care and dedicated dental service provided by expert surgeons.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="tel:9051553253" class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700 text-white font-extrabold px-9 py-4 rounded-xl shadow-xl shadow-cyan-600/25 transition-all transform hover:-translate-y-0.5 text-sm tracking-wide">
+                        <i class="fa-solid fa-phone text-cyan-200"></i>
+                        <span>Call Now for Free Consultation</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ULTRA-PREMIUM ROYAL DEEP BLUE FAQ & WHAT WE OFFER SECTION (Right Side is Now a Fully Clickable YouTube Button) -->
+<section class="py-28 px-4 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white relative overflow-hidden">
+    <!-- Ambient Glow -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+        
+        <!-- Left Column: FAQ with Royal Deep Blue Theme, Exact Text, Zero Scroll, Height Matched & Floating Hover -->
+        <div class="lg:col-span-6 bg-slate-900/90 backdrop-blur-xl p-8 lg:p-9 rounded-3xl shadow-2xl border border-cyan-800/60 space-y-5 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 h-[520px] flex flex-col justify-between">
+            <div class="space-y-3 shrink-0">
+                <div class="inline-flex items-center gap-2 bg-cyan-950 text-cyan-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider border border-cyan-700/60 shadow-sm">
+                    <i class="fa-solid fa-circle-question text-cyan-400"></i> Patient Support
+                </div>
+
+                <h2 class="text-lg sm:text-xl font-extrabold text-white uppercase tracking-tight leading-snug">
+                    FREQUENTLY ASKED QUESTIONS <span class="text-cyan-400">(FAQ)</span>
+                </h2>
+            </div>
+
+            <!-- Questions Container (Zero scroll, perfectly sized font & spacing) -->
+            <div class="space-y-3 my-auto text-xs sm:text-[13px]">
+                <div class="bg-cyan-950/60 p-3 rounded-xl border border-cyan-800/50 shadow-sm space-y-0.5 hover:border-cyan-400 transition-colors">
+                    <h3 class="font-bold text-cyan-200 flex items-center gap-2">
+                        <span class="text-cyan-400 font-extrabold">1.</span> IS DENTAL TREATMENT ALWAYS VERY EXPENSIVE?
+                    </h3>
+                    <p class="text-slate-300 pl-4 leading-normal">NO. UNLESS DELAYED OR NEGLECTED BY PATIENTS TO VISIT THE DENTIST ON TIME.</p>
+                </div>
+
+                <div class="bg-cyan-950/60 p-3 rounded-xl border border-cyan-800/50 shadow-sm space-y-0.5 hover:border-cyan-400 transition-colors">
+                    <h3 class="font-bold text-cyan-200 flex items-center gap-2">
+                        <span class="text-cyan-400 font-extrabold">2.</span> HOW FREQUENTLY SHOULD SOMEONE VISIT A DENTIST?
+                    </h3>
+                    <p class="text-slate-300 pl-4 leading-normal">FOR ROUTINE DENTAL CHECKUP IN 6 MONTHS INTERVAL.</p>
+                </div>
+
+                <div class="bg-cyan-950/60 p-3 rounded-xl border border-cyan-800/50 shadow-sm space-y-0.5 hover:border-cyan-400 transition-colors">
+                    <h3 class="font-bold text-cyan-200 flex items-center gap-2">
+                        <span class="text-cyan-400 font-extrabold">3.</span> HOW OFTEN SHOULD ANYONE CHANGE THEIR TOOTHBRUSH?
+                    </h3>
+                    <p class="text-slate-300 pl-4 leading-normal">APPROXIMATELY AT 3-MONTH INTERVALS.</p>
+                </div>
+
+                <div class="bg-cyan-950/60 p-3 rounded-xl border border-cyan-800/50 shadow-sm space-y-0.5 hover:border-cyan-400 transition-colors">
+                    <h3 class="font-bold text-cyan-200 flex items-center gap-2">
+                        <span class="text-cyan-400 font-extrabold">4.</span> AT WHICH STAGE SHOULD CHILDREN'S TOOTHBRUSHING BE STARTED?
+                    </h3>
+                    <p class="text-slate-300 pl-4 leading-normal">JUST AFTER ERUPTING THEIR FIRST TOOTH.</p>
+                </div>
+            </div>
+
+            <div class="pt-2 border-t border-cyan-900/80 text-[11px] text-cyan-400 font-semibold shrink-0 flex items-center justify-between">
+                <span>📍 Dentity Dental Care</span>
+                <span>Expert Answers</span>
+            </div>
+        </div>
+
+        <!-- Right Column: Full-Area Clickable YouTube Link Card -->
+        <div class="lg:col-span-6 flex justify-center items-center">
+            <a href="https://www.youtube.com/channel/UC-iPLeqAzrCXv3_gowjrqWw" target="_blank" rel="noopener noreferrer" class="relative w-full bg-slate-900/90 backdrop-blur-xl p-5 rounded-3xl shadow-2xl border border-cyan-800/60 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.4)] transition-all duration-500 h-[520px] flex flex-col justify-between group block cursor-pointer">
+                <div class="space-y-3 shrink-0 flex items-center justify-between">
+                    <div class="inline-flex items-center gap-2 bg-cyan-950 text-cyan-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider border border-cyan-700/60 shadow-sm">
+                        <i class="fa-solid fa-video text-cyan-400"></i> Video Showcase
+                    </div>
+                    <span class="text-xs font-bold text-cyan-400 group-hover:underline flex items-center gap-1">
+                        <span>Visit Channel</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <div class="my-auto overflow-hidden rounded-2xl border border-cyan-900/50 shadow-lg relative">
+                    <img src="/static/faq_banner.jpeg" alt="What We Offer - Dentity Dental" class="w-full h-[370px] object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+
+                <div class="pt-2 border-t border-cyan-900/80 text-[11px] text-cyan-400 font-semibold shrink-0 flex items-center justify-between">
+                    <span>🎥 Click to watch on YouTube</span>
+                    <span>HD Quality</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ULTRA-PREMIUM DISTINCT TESTIMONIALS SECTION (Unique Rich Dark Indigo & Emerald Glow to Separate from FAQ) -->
+<section class="py-28 px-4 bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-950 text-white relative overflow-hidden border-t-2 border-cyan-500/20">
+    <!-- Distinct Ambient Glowing Orbs -->
+    <div class="absolute top-1/3 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <div class="inline-flex items-center gap-2 bg-indigo-950 text-indigo-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-indigo-700/60 shadow-lg">
+                <i class="fa-solid fa-quote-left text-indigo-400"></i> Testimonials
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-teal-200 to-cyan-200 drop-shadow-[0_0_25px_rgba(129,140,248,0.35)]">What Our Satisfied Patients Say</span>
+            </h2>
+            <p class="text-indigo-200/80 text-base sm:text-lg">Real stories of renewed smiles and clinical excellence from our valued patients.</p>
+        </div>
+
+        <!-- Testimonials 3-Column Grid with Distinct Indigo Glow & Floating Hover Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-indigo-950/60 backdrop-blur-xl p-8 rounded-3xl border border-indigo-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-indigo-400 hover:shadow-[0_20px_50px_rgba(99,102,241,0.25)] transition-all duration-500 group">
+                <div class="space-y-4">
+                    <div class="text-indigo-400 text-3xl font-serif">“</div>
+                    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+                        My father did not eat a lot of things because he had extreme sensitivity in the chewing tooth. He went to Dentity Dental Sonarpur clinic, The dentist advised root canal treatment followed by PFM crown. The attention was close and recovery was seamless. He is now able to enjoy his meals again.
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-indigo-900/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-300 flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white group-hover:text-indigo-300 transition-colors">Mrinal Barui</h4>
+                        <p class="text-indigo-400/70 text-xs">Verified Patient</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-indigo-950/60 backdrop-blur-xl p-8 rounded-3xl border border-indigo-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-indigo-400 hover:shadow-[0_20px_50px_rgba(99,102,241,0.25)] transition-all duration-500 group">
+                <div class="space-y-4">
+                    <div class="text-indigo-400 text-3xl font-serif">“</div>
+                    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+                        My child used to breathe through his mouth while sleeping, and there were problems with mouth dryness and badbreath every morning. We went to Dentity Dental at Rajarhat Newtown and the dentist explained the issue very well and advised a vestibular screen appliance. The appliance was comfortable and easy to use. Gradually, mouth breathing was reduced and the overall freshness in the mouth was improved to a significant extent.
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-indigo-900/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-300 flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white group-hover:text-indigo-300 transition-colors">Anirban Bhandari</h4>
+                        <p class="text-indigo-400/70 text-xs">Verified Patient</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-indigo-950/60 backdrop-blur-xl p-8 rounded-3xl border border-indigo-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-indigo-400 hover:shadow-[0_20px_50px_rgba(99,102,241,0.25)] transition-all duration-500 group">
+                <div class="space-y-4">
+                    <div class="text-indigo-400 text-3xl font-serif">“</div>
+                    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+                        My father's tooth implants at Dentity Dental Dum Dum Cantonment clinic have changed his life. Missing and infected teeth were replaced with a set of natural looking artificial teeth, and now he can eat and smile confidently again. This dental implants treatment is really good. Thank you so much Dr. Saikat Paul and his team. Amazing experience.
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-indigo-900/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-300 flex items-center justify-center text-lg shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white group-hover:text-indigo-300 transition-colors">Sagar Halder</h4>
+                        <p class="text-indigo-400/70 text-xs">Verified Patient</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ULTRA-PREMIUM OUR CLINICS SECTION (Kolkata Branches in Deep Blue, Midnapore Branch in Distinct Rich Golden-Amber Theme with "OUR OTHER CLINIC" text) -->
+<section class="py-28 px-4 bg-gradient-to-b from-slate-950 via-cyan-950 to-slate-900 text-white relative overflow-hidden border-t-2 border-cyan-500/20">
+    <!-- Ambient Glow Orbs -->
+    <div class="absolute top-1/4 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <div class="inline-flex items-center gap-2 bg-cyan-950 text-cyan-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-cyan-700/60 shadow-lg">
+                <i class="fa-solid fa-location-dot text-cyan-400"></i> Branch Network
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-cyan-100 drop-shadow-[0_0_25px_rgba(34,211,238,0.35)]">Our Clinics</span>
+            </h2>
+            <p class="text-cyan-200/80 text-base sm:text-lg">State-of-the-art dental care units strategically located across Kolkata and West Bengal.</p>
+        </div>
+
+        <!-- 3-Column Grid of Clinic Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- 1. Sonarpur -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">SONARPUR</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        HC Sarani, near Khadim/Sishu Niketan Lane, Deshbandhu Park, Sonarpur, Kolkata, Rajpur Sonarpur, West Bengal 700150
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:8017736515" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 8017736515 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Gariahat -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">GARIAHAT</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Entrance Gate, Gariahat Market (Old Block), Stall G 11 1st Floor at Gariahat Crossing 212 Rashbehari Avenue Entrance Gate No 3 on Rashbehari Road, 5 on, Gariahat Rd, Kolkata, West Bengal 700019
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:6289912812" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 6289912812 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Tollygunge Suryanagar -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">TOLLYGUNGE SURYANAGAR</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Titli Apartment, 203A, Bose Rd, Suryanagar, Regent Grove, Bansdroni, Kolkata, West Bengal 700040
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:6289916460" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 6289916460 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. Tollygunge Netaji Nagar -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">TOLLYGUNGE NETAJI NAGAR</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        2, 56A, Netajinagar College Rd, opp. Narmada School, Gandhi Colony, Netaji Nagar, Kolkata, West Bengal 700092
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:6291496611" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 6291496611 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Beleghata -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">BELEGHATA</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        P 44, CIT Road, Hem Chandra Naskar Rd, opposite to Beleghata, P.S, Kolkata, West Bengal 700010
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:6289716460" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 6289716460 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. Teghoria -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">TEGHORIA</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Ground Floor, DEEPSHIKHA APARTMENT, Teghoria VIP Road, 21, Teghoria Main Road, Kolkata, West Bengal 700157
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:6289525865" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 6289525865 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7. Dum Dum Cantonment -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">DUM DUM CANTONMENT</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        SBI ATM /Dhaka Sweets, 28, Subhas Nagar Rd, near Cantonment Station and Metro Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:6290616460" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 6290616460 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8. Rajarhat Teghoria NewTown -->
+            <div class="bg-slate-900/90 backdrop-blur-xl p-7 rounded-3xl border border-cyan-800/60 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_50px_rgba(8,145,178,0.3)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <h3 class="text-lg font-extrabold text-cyan-300 uppercase tracking-wide">DENTITY DENTAL <br><span class="text-white">RAJARHAT TEGHORIA NEWTOWN</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Number G3, Ground Floor, T/98, Abantika Apartment, Shop, Rajarhat Main Rd, Kolkata, West Bengal 700158
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-cyan-900/80">
+                    <a href="tel:9874802257" class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-cyan-200"></i> 9874802257 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-teal-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+            <!-- 9. Dental Mid World (Midnapore - OUR OTHER CLINIC) -->
+            <div class="bg-gradient-to-br from-slate-900 via-amber-950 to-slate-900 backdrop-blur-xl p-7 rounded-3xl border-2 border-amber-500/60 shadow-[0_0_35px_rgba(245,158,11,0.2)] flex flex-col justify-between hover:-translate-y-2 hover:border-amber-400 hover:shadow-[0_20px_50px_rgba(245,158,11,0.35)] transition-all duration-500 group">
+                <div class="space-y-4 text-center">
+                    <span class="inline-block bg-amber-500/20 text-amber-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider border border-amber-500/40">OUR OTHER CLINIC</span>
+                    <h3 class="text-base font-extrabold text-amber-200 uppercase tracking-wide">DR. SAIKAT PAUL AND TEAM <br><span class="text-white">(DENTAL MID WORLD)</span></h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Gate No 1, Stadium Rd, opposite Sri Aurobindo Stadium, Medinipur, Rabindra Nagar, West, Midnapore, West Bengal 721101
+                    </p>
+                </div>
+                <div class="space-y-2.5 pt-6 mt-6 border-t border-amber-900/80">
+                    <a href="tel:8910882477" class="flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-amber-200"></i> 8910882477 (Primary)
+                    </a>
+                    <a href="tel:9051553253" class="flex items-center justify-center gap-2 bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-solid fa-phone text-yellow-200"></i> 9051553253 (Additional)
+                    </a>
+                    <a href="https://wa.me/919051553253" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-200"></i> 9051553253 (WhatsApp)
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Aesthetic Call Button with Mobile Number at Bottom -->
+        <div class="text-center pt-8">
+            <a href="tel:9051553253" class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-extrabold px-10 py-4 rounded-2xl shadow-[0_0_30px_rgba(20,184,166,0.4)] transition-all transform hover:-translate-y-1 text-base sm:text-lg tracking-wide border border-teal-300/30">
+                <div class="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center text-white shadow-inner">
+                    <i class="fa-solid fa-phone-volume text-white animate-pulse"></i>
+                </div>
+                <span>Call Now: <strong class="underline decoration-white/60 underline-offset-4">9051553253</strong></span>
+            </a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
