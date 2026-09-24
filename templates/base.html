@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     
-    <!-- Google থেকে গোপনীয় ও প্রাইভেট রাখার জন্য noindex ট্যাগ -->
+    <!-- Google theke goponio o private rakhar jonno noindex tag -->
     <meta name="robots" content="noindex, nofollow">
 
     <!-- SEO Meta Tags -->
@@ -76,18 +76,20 @@
         </div>
     </div>
 
-    <!-- Navigation Bar with Treatments Link -->
+    <!-- Navigation Bar with Mobile Responsive Menu Toggle -->
     <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="{{ url_for('home') }}" class="flex items-center gap-4 group">
-                <img src="{{ url_for('static', filename='logo.webp') }}" alt="Dentity Dental Logo" class="w-14 h-14 rounded-full object-cover shadow-md border-2 border-cyan-500/80 group-hover:scale-105 transition-transform">
+                <img src="{{ url_for('static', filename='logo.webp') }}" alt="Dentity Dental Logo" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover shadow-md border-2 border-cyan-500/80 group-hover:scale-105 transition-transform">
                 <div class="flex flex-col">
-                    <span class="text-2xl sm:text-[26px] font-extrabold tracking-tight text-slate-900 leading-none">
+                    <span class="text-xl sm:text-[26px] font-extrabold tracking-tight text-slate-900 leading-none">
                         DENTITY <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Dental</span>
                     </span>
-                    <span class="text-[11px] uppercase font-bold text-slate-400 tracking-[0.2em] mt-1">Multi-Speciality Dental Clinics</span>
+                    <span class="text-[10px] sm:text-[11px] uppercase font-bold text-slate-400 tracking-[0.2em] mt-1">Multi-Speciality Dental Clinics</span>
                 </div>
             </a>
+            
+            <!-- Desktop Links -->
             <div class="hidden md:flex items-center space-x-8 font-semibold text-slate-700 tracking-wide text-sm">
                 <a href="{{ url_for('home') }}" class="hover:text-cyan-600 transition">Home</a>
                 <a href="{{ url_for('services') }}" class="hover:text-cyan-600 transition">Services</a>
@@ -95,13 +97,53 @@
                 <a href="{{ url_for('about') }}" class="hover:text-cyan-600 transition">About Us</a>
                 <a href="{{ url_for('contact') }}" class="hover:text-cyan-600 transition">Contact</a>
             </div>
-            <div>
+
+            <div class="hidden md:block">
                 <a href="{{ url_for('contact') }}" class="bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700 text-white px-6 py-3 rounded-xl font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i> Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-slate-700 hover:text-cyan-600 focus:outline-none text-2xl p-2">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="{{ url_for('home') }}" class="block font-semibold text-slate-700 hover:text-cyan-600 py-2 border-b border-slate-50">Home</a>
+            <a href="{{ url_for('services') }}" class="block font-semibold text-slate-700 hover:text-cyan-600 py-2 border-b border-slate-50">Services</a>
+            <a href="{{ url_for('treatments') }}" class="block font-semibold text-slate-700 hover:text-cyan-600 py-2 border-b border-slate-50">Treatments</a>
+            <a href="{{ url_for('about') }}" class="block font-semibold text-slate-700 hover:text-cyan-600 py-2 border-b border-slate-50">About Us</a>
+            <a href="{{ url_for('contact') }}" class="block font-semibold text-slate-700 hover:text-cyan-600 py-2 border-b border-slate-50">Contact</a>
+            <div class="pt-2">
+                <a href="{{ url_for('contact') }}" class="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-6 py-3 rounded-xl font-bold text-sm text-center shadow-md flex items-center justify-center gap-2">
                     <i class="fa-regular fa-calendar-check"></i> Book Appointment
                 </a>
             </div>
         </div>
     </nav>
+
+    <!-- Simple JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
 
     <!-- Main Content -->
     {% block content %}{% endblock %}
